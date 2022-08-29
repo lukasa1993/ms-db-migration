@@ -1,6 +1,6 @@
 {
   "name": "ms-db-migration",
-  "version": "1.0.0",
+  "version": "1.5.5",
   "description": "postgres database migrations",
   "main": "index.js",
   "repository": {
@@ -18,21 +18,15 @@
     "email": "luka@picktek.com"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "ms-starter"
+    "access": "public"
   },
+  "keywords": ["ms-starter", "ms-db", "ms-db-migration", "migration", "postgres"],
   "engines": {
     "node": ">= 16"
   },
   "dependencies": {
-    "kleur": "^4.1.0",
     "mk-dirs": "^3.0.0",
-    "sade": "^1.7.0",
     "postgres": "^3.2.4",
     "totalist": "^2.0.0"
-  },
-  "devDependencies": {
-    "semiver": "1.1.0",
-    "uvu": "0.5.1"
   }
 }
