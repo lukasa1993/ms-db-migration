@@ -1,0 +1,38 @@
+{
+  "name": "ms-db-migration",
+  "version": "1.0.0",
+  "description": "postgres database migrations",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukasa1993/ms-db-migration.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasa1993/ms-db-migration/issues"
+  },
+  "homepage": "https://github.com/lukasa1993/ms-db-migration#readme",
+  "type": "module",
+  "author": {
+    "name": "luka dodelia",
+    "email": "luka@picktek.com"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "ms-starter"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "dependencies": {
+    "kleur": "^4.1.0",
+    "mk-dirs": "^3.0.0",
+    "sade": "^1.7.0",
+    "postgres": "^3.2.4",
+    "totalist": "^2.0.0"
+  },
+  "devDependencies": {
+    "semiver": "1.1.0",
+    "uvu": "0.5.1"
+  }
+}
