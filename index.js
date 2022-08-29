@@ -25,7 +25,7 @@ async function parse(opts) {
   return { migrations };
 }
 
-exports.up = async function(opts = {}) {
+export async function up(opts = {}) {
   let client, { migrations } = await parse(opts);
 
   try {
@@ -46,9 +46,9 @@ exports.up = async function(opts = {}) {
       await end(client);
     }
   }
-};
+}
 
-exports.down = async function(opts = {}) {
+export async function down(opts = {}) {
   let client, { migrations } = await parse(opts);
 
   try {
@@ -76,9 +76,9 @@ exports.down = async function(opts = {}) {
       await end(client);
     }
   }
-};
+}
 
-exports.status = async function(opts = {}) {
+export async function status(opts = {}) {
   let client, { migrations } = await parse(opts);
 
   try {
@@ -90,9 +90,9 @@ exports.status = async function(opts = {}) {
       await end(client);
     }
   }
-};
+}
 
-exports.new = async function(opts = {}) {
+export async function create(opts = {}) {
   let prefix = Date.now() / 1e3 | 0;
 
   let filename = prefix + '-' + opts.filename.replace(/\s+/g, '-');
@@ -109,4 +109,4 @@ exports.new = async function(opts = {}) {
   });
 
   return filename;
-};
+}
